@@ -50,7 +50,11 @@ server {
 		# as directory, then fall back to displaying a 404.
 		try_files $uri $uri/ =404;
     
-    add_header 'Access-Control-Allow-Origin' '*';
+    	add_header 'Access-Control-Allow-Origin' '*';
+    	add_header 'Content-Type' 'application/json';
+    	add_header 'Access-Control-Allow-Headers' 'Content-Type';
+    	add_header 'Access-Control-Allow-Methods' 'POST, GET, OPTIONS';
+
 		error_page 405 =200 $uri;
 		
 		proxy_set_header X-Real-IP $remote_addr;
