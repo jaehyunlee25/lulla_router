@@ -51,7 +51,7 @@ server {
 		try_files $uri $uri/ =404;
 	}
 
-	localtion /api {
+	location /api {
 		location ~ /auth { http://mnemosyne.co.kr:1000 }
 		location ~ /school { http://mnemosyne.co.kr:1001 }
 	}
