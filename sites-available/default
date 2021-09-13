@@ -82,10 +82,12 @@ server {
 		proxy_redirect off;
 
 		location /api {
-			location ~ /auth { proxy_pass http://mnemosyne.co.kr:1000; }
-			location ~ /auth/ { proxy_pass http://mnemosyne.co.kr:1000; }
-			location ~ /school { proxy_pass http://mnemosyne.co.kr:1001; }
-			location ~ /school/ { proxy_pass http://mnemosyne.co.kr:1001; }
+			location ~ /auth { proxy_pass http://dev.lulla.co.kr:1000; }
+			location ~ /auth/ { proxy_pass http://dev.lulla.co.kr:1000; }
+			location ~ /school { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /school/ { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /class { proxy_pass http://dev.lulla.co.kr:1002; }
+			location ~ /class/ { proxy_pass http://dev.lulla.co.kr:1002; }
 		}
 
 	}
