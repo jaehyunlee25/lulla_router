@@ -99,6 +99,9 @@ server {
 
 			location ~ /file { proxy_pass http://dev.lulla.co.kr:1003; }
 			location ~ /file/ { proxy_pass http://dev.lulla.co.kr:1003; }
+
+			location ~ /post { proxy_pass http://dev.lulla.co.kr:1004; }
+			location ~ /post/ { proxy_pass http://dev.lulla.co.kr:1004; }
 		}
 
 	}
