@@ -105,6 +105,9 @@ server {
 
 			location ~ /comment { proxy_pass http://dev.lulla.co.kr:1004; }
 			location ~ /comment/ { proxy_pass http://dev.lulla.co.kr:1004; }
+
+			location ~ /bookmark { proxy_pass http://dev.lulla.co.kr:1004; }
+			location ~ /bookmark/ { proxy_pass http://dev.lulla.co.kr:1004; }
 		}
 
 	}
