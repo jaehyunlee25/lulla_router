@@ -111,6 +111,9 @@ server {
 
 			location ~ /survey { proxy_pass http://dev.lulla.co.kr:1004; }
 			location ~ /survey/ { proxy_pass http://dev.lulla.co.kr:1004; }
+
+			location ~ /album { proxy_pass http://dev.lulla.co.kr:1005; }
+			location ~ /album/ { proxy_pass http://dev.lulla.co.kr:1005; }
 		}
 
 	}
