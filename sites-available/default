@@ -114,6 +114,9 @@ server {
 
 			location ~ /album { proxy_pass http://dev.lulla.co.kr:1005; }
 			location ~ /album/ { proxy_pass http://dev.lulla.co.kr:1005; }
+
+			location ~ /send { proxy_pass http://dev.lulla.co.kr:1006; }
+			location ~ /send/ { proxy_pass http://dev.lulla.co.kr:1006; }
 		}
 
 	}
