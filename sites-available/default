@@ -93,6 +93,9 @@ server {
 			location ~ /institutions/ { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /member { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /member/ { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /invite { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /invite/ { proxy_pass http://dev.lulla.co.kr:1001; }
+			
 
 			location ~ /class { proxy_pass http://dev.lulla.co.kr:1002; }
 			location ~ /class/ { proxy_pass http://dev.lulla.co.kr:1002; }
