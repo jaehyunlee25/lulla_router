@@ -97,6 +97,8 @@ server {
 			location ~ /invite/ { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /announce { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /announce/ { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /demand { proxy_pass http://dev.lulla.co.kr:1001; }
+			location ~ /demand/ { proxy_pass http://dev.lulla.co.kr:1001; }
 			
 
 			location ~ /class { proxy_pass http://dev.lulla.co.kr:1002; }
