@@ -87,8 +87,6 @@ server {
 			
 			location ~ /school { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /school/ { proxy_pass http://dev.lulla.co.kr:1001; }
-			location ~ /class { proxy_pass http://dev.lulla.co.kr:1001; }
-			location ~ /class/ { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /district { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /district/ { proxy_pass http://dev.lulla.co.kr:1001; }
 			location ~ /institutions { proxy_pass http://dev.lulla.co.kr:1001; }
